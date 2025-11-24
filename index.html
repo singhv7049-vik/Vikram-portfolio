@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram Singh Rajput | Adwas | Official Portfolio</title><!-- SEO META TAGS -->
+<meta name="title" content="Vikram Singh Rajput | Adwas | Official Portfolio">
+<meta name="description" content="Official portfolio of Vikram Singh Rajput from Adwas. Sketch artist, learner and creative mind.">
+<meta name="keywords" content="Vikram Singh Rajput Adwas, Vikram Singh Rajput, Rajput Vikram, Adwas Rajput, Vikram Portfolio">
+<meta name="author" content="Vikram Singh Rajput">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Vikram Singh Rajput | Portfolio">
+<meta property="og:description" content="Sketch artist and simple creative mind from Adwas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="vikram.jpg">
+
+<style>
+    /* -------------------- GLOBAL STYLE -------------------- */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+    }
+
+    nav {
+        background: #111;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #00d4ff;
+    }
+
+    /* -------------------- HERO SECTION -------------------- */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+        color: white;
+    }
+
+    .hero img {
+        width: 280px;
+        border-radius: 20px;
+        margin-right: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+    }
+
+    /* -------------------- ABOUT SECTION -------------------- */
+    #about {
+        padding: 70px 30px;
+        background: white;
+    }
+
+    #about h2 {
+        font-size: 35px;
+    }
+
+    .about-box {
+        max-width: 850px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* -------------------- EXTRA PAGE STYLE -------------------- */
+    #extra {
+        padding: 70px 30px;
+        background: #fafafa;
+    }
+
+    #extra h2 {
+        font-size: 35px;
+    }
+
+    .extra-box {
+        max-width: 850px;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        background: #111;
+        color: white;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero img {
+            margin: 0 0 20px 0;
+            width: 200px;
+        }
+        nav {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+        }
+    }
+</style>
+
+</head>
+<body><!-- -------------------- NAVIGATION BAR -------------------- -->
+<!-- Yaha par apna naam likhna -->
+<nav>
+    <div style="color:white; font-size:22px; font-weight:bold;">My Portfolio</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#extra">Extra</a>
+    </div>
+</nav>
+
+<!-- -------------------- HERO SECTION -------------------- -->
+<section class="hero" id="home">
+  
+    <!-- Yaha apni photo ka file naam lagana -->
+    <img src="vikram.jpg" alt="My Photo">
+
+    <div class="hero-text">
+        <!-- Yaha apna naam likhna -->
+        <h1>Hi, I'm VIKRAM SINGH RAJPUT</h1>
+
+        <!-- Yaha ek short line likhna apne baare me -->
+        <p>Sketch Artist | Learner | Simple Creative Mind</p>
+    </div>
+</section>
+
+<!-- -------------------- ABOUT SECTION -------------------- -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+        <!-- Yaha apne baare me full detail likhna -->
+        <p>
+            Welcome to my portfolio! My name is Vikram Singh Rajput. Main ek simple aur focused insan hoon jo hamesha seekhne aur behtar banne ki koshish karta hai. Mujhe sketch banana pasand hai, aur main har kaam ko calm aur clean approach ke saath karta hoon. <br><br>Yaha aap mere baare me short aur honest jankari dekh sakte ho—simple, real aur bina hype ke.
+    </div>
+</section>
+
+<!-- -------------------- EXTRA PAGE (CUSTOM SECTION) -------------------- -->
+<section id="extra">
+    <h2>Extra Page</h2>
+    <div class="extra-box">
+        <!-- Yaha koi bhi extra information daal sakte ho -->
+        <p>
+            Yaha meri simple skills di hui hain jo mujhe define karti hain:<br><br>
+
+• Sketching – pencil art, basic portrait outlines<br> • Basic Computer Knowledge<br> • Creative Thinking & Simple Design Sense<br> • Consistency & Calm Work Approach<br><br> Ye page aap meri skills ka short aur clean overview ke liye use kar sakte ho. </div> </section>
+
+<footer>
+    <!-- Footer me apna name ya copyright -->
+    © 2025 VIKRAM SINGH RAJPUT | All Rights Reserved
+<br>
+    <p style="margin-top:10px; font-size:16px;">
+        Instagram: <a href="https://instagram.com/vikramsinghrajput" target="_blank" style="color:#00d4ff; text-decoration:none;">@vikramsinghrajput</a>
+    </p>
+</footer>
+<script>
+    // Scroll Animation
+    document.addEventListener("DOMContentLoaded", () => {
+        let sections = document.querySelectorAll("section");
+
+        // Pehle sab section ko hidden style do
+        sections.forEach(sec => {
+            sec.style.opacity = "0";
+            sec.style.transform = "translateY(40px)";
+            sec.style.transition = "0.8s ease";
+        });
+
+        // Scroll par visible karo
+        const showSections = () => {
+            sections.forEach(sec => {
+                let position = sec.getBoundingClientRect().top;
+                if (position < window.innerHeight - 100) {
+                    sec.style.opacity = "1";
+                    sec.style.transform = "translateY(0)";
+                }
+            });
+        };
+
+        window.addEventListener("scroll", showSections);
+        showSections();
+    });
+</script>
+</body>
+</html>

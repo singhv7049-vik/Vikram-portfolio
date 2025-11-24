@@ -1,0 +1,164 @@
+/* ==================== GLOBAL ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9eef5;   /* Light classic color */
+    color: #222;
+    scroll-behavior: smooth;
+}
+
+/* ------------------ NAVBAR ------------------ */
+nav {
+    background: #0f141a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav div {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00a8ff;
+}
+
+/* ------------------ HERO SECTION ------------------ */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background: #fefefe;
+    animation: fadeIn 1.3s ease;
+}
+
+.hero img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    animation: popIn 1.4s ease-out;
+}
+
+/* Hero Text */
+.hero-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    animation: slideIn 1.2s ease;
+}
+
+.hero-text p {
+    font-size: 20px;
+    opacity: 0.85;
+}
+
+/* ------------------ ABOUT ------------------ */
+#about {
+    padding: 70px 30px;
+    background: white;
+    animation: fadeInUp 1.3s ease;
+}
+
+#about h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ------------------ EXTRA ------------------ */
+#extra {
+    padding: 70px 30px;
+    background: #f5f7fa;
+    animation: fadeInUp 1.3s ease;
+}
+
+#extra h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.extra-box {
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #0f141a;
+    color: white;
+}
+
+/* ----------- ANIMATIONS ----------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-40px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img {
+        margin: 0 0 20px 0;
+        width: 200px;
+        height: 200px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 10px;
+    }
+}
